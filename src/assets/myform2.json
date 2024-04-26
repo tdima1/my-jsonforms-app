@@ -1,0 +1,38 @@
+{
+    "schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "property0": {
+          "type": "number",
+          "title": "Property0"
+        },
+        "required": [ "name", "property0" ]
+      }},
+      "uischema": {
+        "type": "VerticalLayout",
+        "elements": [
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/name"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/property0"
+              }
+            ]
+          }
+        ]
+      },
+      "data": {
+        "name": "John Doe0",
+        "property0": "73"
+      }
+    }
+  

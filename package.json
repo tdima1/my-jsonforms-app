@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "random-words": "^2.0.0",
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",
     "@angular/compiler": "^16.1.0",
@@ -22,6 +23,7 @@
     "@jsonforms/angular": "^3.2.1",
     "@jsonforms/angular-material": "^3.2.1",
     "@jsonforms/core": "^3.2.1",
+    "@jsonforms/examples": "^3.2.1",
     "@jsonforms/material-renderers": "^3.2.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

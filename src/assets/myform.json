@@ -1,5 +1,6 @@
 {
-    "schema": {
+    "schema": 
+    {
       "type": "object",
       "title": "Person",
       "properties": {
@@ -7,79 +8,23 @@
           "type": "string",
           "minLength": 3
         },
-        "birthDate": {
-          "type": "string",
-          "format": "date"
-        },
-        "personalData": {
-          "type": "object",
-          "required": [
-            "age",
-            "height"
-          ],
-          "properties": {
-            "age": {
-              "type": "integer",
-              "description": "Please enter your age."
-            },
-            "height": {
-              "type": "number"
-            },
-            "drivingSkill": {
-              "type": "number",
-              "maximum": 10,
-              "minimum": 1,
-              "default": 7
-            }
-          }
-        },
-        "friends": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "title": "Friend",
-            "properties": {
-              "name": {
-                "type": "string"
-              },
-              "isClose": {
-                "type": "boolean"
-              }
-            }
-          }
-        },
-        "nationality": {
-          "type": "string",
-          "enum": [
-            "DE",
-            "IT",
-            "JP",
-            "US",
-            "RU",
-            "Other"
-          ]
-        },
         "occupation": {
           "type": "string"
         }
       }
     },
-    "uischema": {
-      "type": "VerticalLayout",
+    "uischema":
+    {
+      "type": "HorizontalLayout",
       "elements": [
         {
           "type": "Control",
           "scope": "#/properties/name"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/nationality"
         }
       ]
     },
     "data": {
-      "name": "Dorel Fantasticul",
-      "nationality": "DE"
+      "name": "Dorel Fantasticul"
     }
   }
   
