@@ -1,38 +1,400 @@
 {
-    "schema": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "title": "Name"
-        },
-        "property0": {
-          "type": "number",
-          "title": "Property0"
-        },
-        "required": [ "name", "property0" ]
-      }},
-      "uischema": {
-        "type": "VerticalLayout",
-        "elements": [
-          {
-            "type": "HorizontalLayout",
-            "elements": [
-              {
-                "type": "Control",
-                "scope": "#/properties/name"
-              },
-              {
-                "type": "Control",
-                "scope": "#/properties/property0"
-              }
-            ]
-          }
-        ]
-      },
-      "data": {
-        "name": "John Doe0",
-        "property0": "73"
-      }
+  "schema": {
+		"type": "object",
+		"title": "TangibleFixedAssets",
+		"properties": {
+		"year_1": {
+			"type": "integer"
+		},
+		"land_and_buildings_1": {
+			"type": "number"
+		},
+		"plant_and_machinery_1": {
+			"type": "number"
+		},
+		"year_2": {
+			"type": "integer"
+		},
+		"land_and_buildings_2": {
+			"type": "number"
+		},
+		"plant_and_machinery_2": {
+			"type": "number"
+		},
+		"year_3": {
+			"type": "integer"
+		},
+		"land_and_buildings_3": {
+			"type": "number"
+		},
+		"plant_and_machinery_3": {
+			"type": "number"
+		},
+		"year_4": {
+			"type": "integer"
+		},
+		"land_and_buildings_4": {
+			"type": "number"
+		},
+		"plant_and_machinery_4": {
+			"type": "number"
+		},
+		"year_5": {
+			"type": "integer"
+		},
+		"land_and_buildings_5": {
+			"type": "number"
+		},
+		"plant_and_machinery_5": {
+			"type": "number"
+		},
+		"year_6": {
+			"type": "integer"
+		},
+		"land_and_buildings_6": {
+			"type": "number"
+		},
+		"plant_and_machinery_6": {
+			"type": "number",
+			"value": "£0.00"
+		},
+		"year_7": {
+			"type": "integer"
+		},
+		"land_and_buildings_7": {
+			"type": "number"
+		},
+		"plant_and_machinery_7": {
+			"type": "number"
+		},
+		"year_8": {
+			"type": "integer"
+		},
+		"land_and_buildings_8": {
+			"type": "number"
+		},
+		"plant_and_machinery_8": {
+			"type": "number"
+		},
+		"year_9": {
+			"type": "integer"
+		},
+		"land_and_buildings_9": {
+			"type": "number"
+		},
+		"plant_and_machinery_9": {
+			"type": "number"
+		},
+		"year_10": {
+			"type": "integer"
+		},
+		"land_and_buildings_10": {
+			"type": "number"
+		},
+		"plant_and_machinery_10": {
+			"type": "number"
+		},
+		"land_and_buildings_cost": {
+			"type": "number"
+		},
+		"plant_and_machinery_cost": {
+			"type": "number"
+		},
+		"land_and_buildings_total": {
+			"type": "number"
+		},
+		"plant_and_machinery_total": {
+			"type": "number"
+		}
+	}
+	},
+    "uischema": {
+      "type": "HorizontalLayout",
+      "elements": [{
+          "type": "VerticalLayout",
+          "elements": [{
+              "type": "Label",
+              "text": "Tangible fixed assets -> Analysis of cost or valuation"
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "Land and buildings"
+                }, {
+                  "type": "Label",
+                  "text": "Plant and machinery etc."
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "1."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_1"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_1"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_1"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "2."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_2"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_2"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_2"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "3."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_3"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_3"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_3"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "4."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_4"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_4"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_4"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "5."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_5"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_5"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_5"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "6."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_6"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_6"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_6"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "7."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_7"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_7"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_7"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "8."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_8"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_8"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_8"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "9."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_9"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_9"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_9"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "10."
+                }, {
+                  "type": "Label",
+                  "text": "Valuation in"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/year_10"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_10"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_10"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "Cost"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_cost"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_cost"
+                }]
+            }, {
+              "type": "HorizontalLayout",
+              "elements": [{
+                  "type": "Label",
+                  "text": "Total"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/land_and_buildings_total"
+                }, {
+                  "type": "Control",
+                  "scope": "#/properties/plant_and_machinery_total"
+                }]
+            }]
+        }]
+    },
+    "data": [{
+      "year_1": 2022,
+      "land_and_buildings_1": 1500.0,
+      "plant_and_machinery_1": 1000.0,
+      "year_2": 2023,
+      "land_and_buildings_2": 1750.0,
+      "plant_and_machinery_2": 1200.0,
+      "year_3": 2024,
+      "land_and_buildings_3": -1800.0,
+      "plant_and_machinery_3": 1250.0,
+      "year_4": 2021,
+      "land_and_buildings_4": 1400.0,
+      "plant_and_machinery_4": 950.0,
+      "year_5": 2024,
+      "land_and_buildings_5": -2000.0,
+      "plant_and_machinery_5": 1300.0,
+      "year_6": 2022,
+      "land_and_buildings_6": 1600.0,
+      "plant_and_machinery_6": 1050.0,
+      "year_7": 2023,
+      "land_and_buildings_7": 1700.0,
+      "plant_and_machinery_7": 1150.0,
+      "year_8": 2021,
+      "land_and_buildings_8": 1450.0,
+      "plant_and_machinery_8": 980.0,
+      "year_9": 2024,
+      "land_and_buildings_9": 1900.0,
+      "plant_and_machinery_9": 1270.0,
+      "year_10": 2023,
+      "land_and_buildings_10": 1850.0,
+      "plant_and_machinery_10": 1230.0,
+      "land_and_buildings_cost": 150.0,
+      "plant_and_machinery_cost": 100.0,
+      "land_and_buildings_total": 16650.0,
+      "plant_and_machinery_total": 11000.0
+    }, {
+      "year_1": 2023,
+      "land_and_buildings_1": -1700.0,
+      "plant_and_machinery_1": 1100.0,
+      "year_2": 2022,
+      "land_and_buildings_2": 1550.0,
+      "plant_and_machinery_2": -1050.0,
+      "year_3": 2021,
+      "land_and_buildings_3": 1350.0,
+      "plant_and_machinery_3": 900.0,
+      "year_4": 2024,
+      "land_and_buildings_4": 1950.0,
+      "plant_and_machinery_4": 1280.0,
+      "year_5": 2022,
+      "land_and_buildings_5": -1650.0,
+      "plant_and_machinery_5": 1070.0,
+      "year_6": 2023,
+      "land_and_buildings_6": 1750.0,
+      "plant_and_machinery_6": 1150.0,
+      "year_7": 2024,
+      "land_and_buildings_7": 1850.0,
+      "plant_and_machinery_7": 1200.0,
+      "year_8": 2021,
+      "land_and_buildings_8": -1400.0,
+      "plant_and_machinery_8": 950.0,
+      "land_and_buildings_cost": 160.0,
+      "plant_and_machinery_cost": 110.0,
+      "land_and_buildings_total": 14300.0,
+      "plant_and_machinery_total": 11400.0
+    }]
     }
   
